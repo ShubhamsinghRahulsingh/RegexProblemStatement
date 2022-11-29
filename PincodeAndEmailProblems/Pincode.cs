@@ -13,9 +13,9 @@ namespace PincodeAndEmailProblems
         public void ValidatePinCode(string input)
         {
             if (Regex.IsMatch(input, PIN_CODE_PATTERN))
-                Console.WriteLine("Pincode is valid");
+                Console.WriteLine("{0} as Pincode is valid",input);
             else
-                Console.WriteLine("Pincode is invalid ");
+                Console.WriteLine("{0} as Pincode is invalid ",input);
 
         }
     }
