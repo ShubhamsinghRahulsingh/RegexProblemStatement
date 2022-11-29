@@ -9,7 +9,8 @@ namespace PincodeAndEmailProblems
             Pincode pin=new Pincode();
             // pin.ValidatePinCode("400088");
             // pin.ValidatePinCode("G00088");
-            pin.ValidatePinCode("400088B");
+            //  pin.ValidatePinCode("400088B");
+            pin.ValidatePinCode("400 088");
         }
     }
 }
