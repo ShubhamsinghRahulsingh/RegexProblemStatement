@@ -5,7 +5,9 @@ namespace PincodeAndEmailProblems
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Welcome to the regex problems");
+            Console.WriteLine("Welcome to the Regex Pattern problems");
+            Pincode pin=new Pincode();
+            pin.ValidatePinCode("400088");
         }
     }
 }
