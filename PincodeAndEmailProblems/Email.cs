@@ -11,6 +11,7 @@ namespace PincodeAndEmailProblems
     {
         const string emailFirstPart = "^[a-z]";
         const string emailSecondPart = "^[a-zA-Z]+[@][a-zA-Z]{2,}$";
+        const string emailThirdPart = "^[a-zA-Z]+[@]([a-zA-Z]{2,})+[.]([a-z]{2,})$";
         public void ValidateEmailFirstPart(string input)
         {
             if (Regex.IsMatch(input, emailFirstPart))
@@ -22,6 +23,14 @@ namespace PincodeAndEmailProblems
         public void ValidateEmailSecondPart(string input)
         {
             if (Regex.IsMatch(input, emailSecondPart))
+                Console.WriteLine("{0} as Email Id is valid", input);
+            else
+                Console.WriteLine("{0} as Email Id is invalid ", input);
+
+        }
+        public void ValidateEmailThirdPart(string input)
+        {
+            if (Regex.IsMatch(input, emailThirdPart))
                 Console.WriteLine("{0} as Email Id is valid", input);
             else
                 Console.WriteLine("{0} as Email Id is invalid ", input);

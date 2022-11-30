@@ -25,6 +25,7 @@ namespace PincodeAndEmailProblems
                         Email email = new Email();
                         email.ValidateEmailFirstPart("abc");
                         email.ValidateEmailSecondPart("abc@bridgelabz");
+                        email.ValidateEmailThirdPart("abc@bridgelabz.co");
                         break;
                     case 3:
                         flag = false;
