@@ -9,6 +9,7 @@ namespace PincodeAndEmailProblems
             bool flag = true;
             while (flag)
             {
+                Console.WriteLine("-------------------------------------------");
                 Console.WriteLine("1.Pincode Validation\n2.Email Validation\n3.Exit");
                 int choice = Convert.ToInt32(Console.ReadLine());
                 switch (choice)
@@ -23,6 +24,7 @@ namespace PincodeAndEmailProblems
                     case 2:
                         Email email = new Email();
                         email.ValidateEmailFirstPart("abc");
+                        email.ValidateEmailSecondPart("abc@bridgelabz");
                         break;
                     case 3:
                         flag = false;
