@@ -26,6 +26,7 @@ namespace PincodeAndEmailProblems
                         email.ValidateEmailFirstPart("abc");
                         email.ValidateEmailSecondPart("abc@bridgelabz");
                         email.ValidateEmailThirdPart("abc@bridgelabz.co");
+                        email.ValidateEmailOptionalPart("abc.xyz@bridgelabz.co.in");
                         break;
                     case 3:
                         flag = false;
