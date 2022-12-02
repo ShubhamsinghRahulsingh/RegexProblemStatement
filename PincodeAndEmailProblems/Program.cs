@@ -3,6 +3,7 @@ namespace PincodeAndEmailProblems
 {
     class Program
     {
+        public static string emailFilePath = @"D:\GitRepository\RegexProblemStatement\PincodeAndEmailProblems\EmailList.txt";
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome to the Regex Pattern problems");
@@ -10,7 +11,7 @@ namespace PincodeAndEmailProblems
             while (flag)
             {
                 Console.WriteLine("-------------------------------------------");
-                Console.WriteLine("1.Pincode Validation\n2.Email Validation\n3.Exit");
+                Console.WriteLine("1.Pincode Validation\n2.Email Validation\n3.EmailList Check\n4.Exit");
                 int choice = Convert.ToInt32(Console.ReadLine());
                 switch (choice)
                 {
@@ -29,6 +30,10 @@ namespace PincodeAndEmailProblems
                         email.ValidateEmailOptionalPart("abc.xyz@bridgelabz.co.in");
                         break;
                     case 3:
+                        EmailList emailList = new EmailList();
+                        emailList.ReadEmailList(emailFilePath);
+                        break;
+                    case 4:
                         flag = false;
                         break;
                 }
